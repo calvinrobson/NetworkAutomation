@@ -1,0 +1,14 @@
+all:
+  vars:
+    username: calvin
+    password: password
+    secret: password
+  groups:
+    btl:
+     hosts:
+      - hostname: R1
+        host: 192.168.129.139
+        device_type: cisco_ios
+      - hostname: R2
+        host: 192.168.16.131
+        device_type: cisco_ios

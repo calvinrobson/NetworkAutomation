@@ -1,0 +1,39 @@
+enable
+!
+conf term
+!
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable secret password
+!
+!
+spanning-tree extend system-id
+!
+!
+!
+username calvin secret password
+!
+interface GigabitEthernet1/0
+ ip address dhcp
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+!
+line con 0
+ stopbits 1
+line vty 0 4
+ login local
+ transport input all
+ exit
+!
+crypto key generate rsa
+!
+1024
+!
+ip ssh version 2
+!
+end

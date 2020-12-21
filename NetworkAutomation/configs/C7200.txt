@@ -1,0 +1,16 @@
+!
+!
+int g1/0
+no shut
+ip address dhcp
+!
+!
+username calvin password password
+!
+ip domain-name cisco
+!
+line vty 0 4 
+transport input all
+login local
+!
+crypto key generate rsa

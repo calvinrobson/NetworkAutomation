@@ -1,0 +1,86 @@
+C:\Users\crobson\NETWORK-PROGRAMMABILITY-LAB\python-ssh>python python_asynchronous_ssh.py
+INFO:netdev:Host 192.168.129.135: Trying to connect to the device
+INFO:netdev:Host 192.168.129.135: Establishing connection to port 22
+INFO:asyncssh:Opening SSH connection to 192.168.129.135, port 22
+INFO:asyncssh:[conn=0] Connection to 192.168.129.135, port 22 succeeded
+INFO:asyncssh:[conn=0]   Local address: 192.168.129.1, port 51968
+INFO:asyncssh:[conn=0] Beginning auth for user calvin
+INFO:asyncssh:[conn=0] Auth for user calvin succeeded
+INFO:asyncssh:[conn=0, chan=0] Requesting new SSH session
+INFO:asyncssh:[conn=0, chan=0]   Interactive shell requested
+INFO:netdev:Host 192.168.129.135: Connection is established
+INFO:netdev:Host 192.168.129.135: Reading until pattern
+DEBUG:netdev:Host 192.168.129.135: Reading pattern: >|\#
+DEBUG:netdev:Host 192.168.129.135: Reading pattern '>|\#' was found: '\r\nR1>'
+DEBUG:netdev:Host 192.168.129.135: Establish Connection Output: '\r\nR1>'
+INFO:netdev:Host 192.168.129.135: Setting base prompt
+INFO:netdev:Host 192.168.129.135: Finding prompt
+INFO:netdev:Host 192.168.129.135: Reading until pattern
+DEBUG:netdev:Host 192.168.129.135: Reading pattern: >|\#
+DEBUG:netdev:Host 192.168.129.135: Reading pattern '>|\#' was found: '\r\nR1>'
+DEBUG:netdev:Host 192.168.129.135: Found Prompt: 'R1>'
+DEBUG:netdev:Host 192.168.129.135: Base Prompt: R1
+DEBUG:netdev:Host 192.168.129.135: Base Pattern: R1.*?(\(.*?\))?[>|\#]
+INFO:netdev:Host 192.168.129.135: Entering to privilege exec
+INFO:netdev:Host 192.168.129.135: Checking privilege exec
+INFO:netdev:Host 192.168.129.135: Reading until pattern
+DEBUG:netdev:Host 192.168.129.135: Reading pattern: R1.*?(\(.*?\))?[>|\#]
+DEBUG:netdev:Host 192.168.129.135: Reading pattern 'R1.*?(\(.*?\))?[>|\#]' was found: '\r\nR1>'
+INFO:netdev:Host 192.168.129.135: Reading until prompt or pattern
+DEBUG:netdev:Host 192.168.129.135: Reading pattern 'password' or 'R1.*?(\(.*?\))?[>|\#]' was found: 'enable\r\nPassword: '
+INFO:netdev:Host 192.168.129.135: Reading until pattern
+DEBUG:netdev:Host 192.168.129.135: Reading pattern: R1.*?(\(.*?\))?[>|\#]
+DEBUG:netdev:Host 192.168.129.135: Reading pattern 'R1.*?(\(.*?\))?[>|\#]' was found: '\r\nR1#'
+INFO:netdev:Host 192.168.129.135: Checking privilege exec
+INFO:netdev:Host 192.168.129.135: Reading until pattern
+DEBUG:netdev:Host 192.168.129.135: Reading pattern: R1.*?(\(.*?\))?[>|\#]
+DEBUG:netdev:Host 192.168.129.135: Reading pattern 'R1.*?(\(.*?\))?[>|\#]' was found: '\r\nR1#'
+INFO:netdev:Host 192.168.129.135: Trying to disable paging
+DEBUG:netdev:Host 192.168.129.135: Disable paging command: 'terminal length 0\n'
+INFO:netdev:Host 192.168.129.135: Reading until pattern
+DEBUG:netdev:Host 192.168.129.135: Reading pattern: R1.*?(\(.*?\))?[>|\#]
+DEBUG:netdev:Host 192.168.129.135: Reading pattern 'R1.*?(\(.*?\))?[>|\#]' was found: 'terminal length 0\r\nR1#'
+DEBUG:netdev:Host 192.168.129.135: Disable paging output: 'terminal length 0\r\nR1#'
+INFO:netdev:Host 192.168.129.135: Has connected to the device
+INFO:netdev:Host 192.168.129.135: Sending command
+DEBUG:netdev:Host 192.168.129.135: Send command: 'show clock\n'
+INFO:netdev:Host 192.168.129.135: Reading until prompt or pattern
+DEBUG:netdev:Host 192.168.129.135: Reading pattern 'R1.*?(\(.*?\))?[>|\#]' or 'R1.*?(\(.*?\))?[>|\#]' was found: 'show clock\r\n*20:26:28.503 UTC Tue Dec 1 2020\r\nR1#'
+INFO:netdev:Host 192.168.129.135: Stripping prompt
+INFO:netdev:Stripping command
+DEBUG:netdev:Host 192.168.129.135: Send command output: '*20:26:28.503 UTC Tue Dec 1 2020'
+INFO:netdev:Host 192.168.129.135: Sending command
+DEBUG:netdev:Host 192.168.129.135: Send command: 'show ip interface brief\n'
+INFO:netdev:Host 192.168.129.135: Reading until prompt or pattern
+DEBUG:netdev:Host 192.168.129.135: Reading pattern 'R1.*?(\(.*?\))?[>|\#]' or 'R1.*?(\(.*?\))?[>|\#]' was found: 'show ip interface brief\r\nInterface              IP-Address      OK? Method Status                Protocol\r\nFastEthernet0/0        unassigned      YES unset  administratively down down    \r\nGigabitEthernet1/0     192.168.129.135 YES DHCP   up                    up      \r\nGigabitEthernet2/0     unassigned      YES unset  administratively down down    \r\nGigabitEthernet3/0     unassigned      YES unset  administratively down down    \r\nR1#'
+INFO:netdev:Host 192.168.129.135: Stripping prompt
+INFO:netdev:Stripping command
+DEBUG:netdev:Host 192.168.129.135: Send command output: 'Interface              IP-Address      OK? Method Status                Protocol\nFastEthernet0/0        unassigned      YES unset  administratively down down    \nGigabitEthernet1/0     192.168.129.135 YES DHCP   up                    up      \nGigabitEthernet2/0     unassigned      YES unset  administratively down down    \nGigabitEthernet3/0     unassigned      YES unset  administratively down down    '
+INFO:netdev:Host 192.168.129.135: Disconnecting
+INFO:netdev:Host 192.168.129.135: Cleanup session
+INFO:netdev:Host 192.168.129.135: Exiting from configuration mode
+INFO:netdev:Host 192.168.129.135: Checking configuration mode
+INFO:netdev:Host 192.168.129.135: Reading until pattern
+DEBUG:netdev:Host 192.168.129.135: Reading pattern: R1.*?(\(.*?\))?[>|\#]
+DEBUG:netdev:Host 192.168.129.135: Reading pattern 'R1.*?(\(.*?\))?[>|\#]' was found: '\r\nR1#'
+INFO:asyncssh:[conn=0] Closing connection
+INFO:asyncssh:[conn=0, chan=0] Closing channel
+INFO:asyncssh:[conn=0] Sending disconnect: Disconnected by application (11)
+INFO:asyncssh:[conn=0] Connection closed
+INFO:asyncssh:[conn=0, chan=0] Closing channel due to connection close
+INFO:asyncssh:[conn=0, chan=0] Channel closed
+==================== R1 ====================
+
+==================== show clock ====================
+
+*20:26:28.503 UTC Tue Dec 1 2020
+
+==================== show ip interface brief ====================
+
+Interface              IP-Address      OK? Method Status                Protocol
+FastEthernet0/0        unassigned      YES unset  administratively down down
+GigabitEthernet1/0     192.168.129.135 YES DHCP   up                    up
+GigabitEthernet2/0     unassigned      YES unset  administratively down down
+GigabitEthernet3/0     unassigned      YES unset  administratively down down
+
+C:\Users\crobson\NETWORK-PROGRAMMABILITY-LAB\python-ssh>
