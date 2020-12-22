@@ -14,7 +14,7 @@ netdev.logger.setLevel(logging.DEBUG)
 SITENAME = 'Home'
 
 SHOW_VERSION_REGEXP = [
-    re.compile(r'(?P<Version>ID\s[A-Z0-9]+$)', re.M)
+    re.compile(r'(?P<Version>ID\s[A-Z0-9]+)', re.M)
     ]
 
 
