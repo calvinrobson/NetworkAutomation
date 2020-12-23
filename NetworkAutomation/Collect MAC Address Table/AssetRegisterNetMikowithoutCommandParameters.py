@@ -18,7 +18,7 @@ SHOW_VERSION_REGEXP = [
     ]
 
 SHOW_MANUFACTURER_REGEXP = [
-    re.compile(r'(?P<Version>ID\s[A-Z0-9]+)', re.M)
+    re.compile(r'(?P<Manufacturer>^[A-Za-z]+\s[0-9]+)', re.M)
     ]
 
 SHOW_IMAGE_REGEXP = [
