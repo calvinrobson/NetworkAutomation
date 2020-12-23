@@ -58,7 +58,7 @@ def netmiko_connection(parameters):
         connection = netmiko.ConnectHandler(**device)
         version = get_serial_number(connection.send_command('show version'))
         manufacture = get_manufacturer_number(connection.send_command('show version'))
-        print(hostname, version)
+        print(hostname, version, manufacture)
         with open ('test.csv', 'w', newline='') as a:
             write = csv.writer(a)
             columns = write.writerow(['Hostname', 'Serial Number', 'Version and System Image'])
