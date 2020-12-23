@@ -57,18 +57,18 @@ def get_image(image_ouput):
     for regexp in SHOW_IMAGE_REGEXP:
         image_dictionary.update(regexp.search(image_ouput).groupdict())
     return image_dictionary
-    
+
 def netmiko_connection(parameters):
     for device in parameters:
         hostname = device.pop('hostname')
         connection = netmiko.ConnectHandler(**device)
         version = get_serial_number(connection.send_command('show version'))
         manufacture = get_manufacturer_number(connection.send_command('show version'))
-        print(hostname, version, manufacture)
+        print(hostname, version, manufacture, image_dictionary)
         with open ('test.csv', 'w', newline='') as a:
             write = csv.writer(a)
             columns = write.writerow(['Hostname', 'Serial Number', 'Version and System Image'])
-            write.writerow([version,hostname,manufacture,''])
+            write.writerow([version,hostname,manufacture,image_dictionary,''])
         connection.disconnect()
 
 def main():
