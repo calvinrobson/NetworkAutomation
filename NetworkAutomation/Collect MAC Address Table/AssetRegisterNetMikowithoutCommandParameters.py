@@ -48,7 +48,7 @@ def get_serial_number(cli_output):
 
 def get_manufacturer_number(manufac_output):
     manufacturer_dict = dict()
-    for regexp in SHOW_MANUFACTURER_REGEXP
+    for regexp in SHOW_MANUFACTURER_REGEXP:
         manufacturer_dict.update(regexp.search(manufac_output).groupdict())
     return manufacturer_dict
 
@@ -57,12 +57,12 @@ def netmiko_connection(parameters):
         hostname = device.pop('hostname')
         connection = netmiko.ConnectHandler(**device)
         version = get_serial_number(connection.send_command('show version'))
-        manufacture = get_manufacturer_number(cinnection.send_command('show version'))
+        manufacture = get_manufacturer_number(connection.send_command('show version'))
         print(hostname, version)
         with open ('test.csv', 'w', newline='') as a:
             write = csv.writer(a)
             columns = write.writerow(['Hostname', 'Serial Number', 'Version and System Image'])
-            write.writerow([version,hostname,''])
+            write.writerow([version,hostname,manufacture,''])
         connection.disconnect()
 
 def main():
