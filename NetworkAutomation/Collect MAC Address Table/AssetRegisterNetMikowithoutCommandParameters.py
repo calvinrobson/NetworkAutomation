@@ -22,7 +22,7 @@ SHOW_MANUFACTURER_REGEXP = [
     ]
 
 SHOW_IMAGE_REGEXP = [
-    re.compile(r'(?P<Version>ID\s[A-Z0-9]+)', re.M)
+    re.compile(r'(?P<Image>\S[0-9]+-[A-Z]+\d-[A-Z])', re.M)
     ]
 
 def read_yaml(path = 'devices.yml'):
@@ -52,6 +52,12 @@ def get_manufacturer_number(manufac_output):
         manufacturer_dict.update(regexp.search(manufac_output).groupdict())
     return manufacturer_dict
 
+def get_image(image_ouput):
+    image_dictionary = dict()
+    for regexp in SHOW_IMAGE_REGEXP:
+        image_dictionary.update(regexp.search(image_ouput).groupdict())
+    return image_dictionary
+    
 def netmiko_connection(parameters):
     for device in parameters:
         hostname = device.pop('hostname')
