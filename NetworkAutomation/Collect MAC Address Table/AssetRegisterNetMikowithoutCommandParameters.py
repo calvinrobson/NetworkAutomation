@@ -64,11 +64,12 @@ def netmiko_connection(parameters):
         connection = netmiko.ConnectHandler(**device)
         version = get_serial_number(connection.send_command('show version'))
         manufacture = get_manufacturer_number(connection.send_command('show version'))
-        print(hostname, version, manufacture, image_dictionary)
+        image = get_image(connection.send_command('show version'))
+        print(hostname, version, manufacture, image)
         with open ('test.csv', 'w', newline='') as a:
             write = csv.writer(a)
             columns = write.writerow(['Hostname', 'Serial Number', 'Version and System Image'])
-            write.writerow([version,hostname,manufacture,image_dictionary,''])
+            write.writerow([version,hostname,manufacture,image,''])
         connection.disconnect()
 
 def main():
