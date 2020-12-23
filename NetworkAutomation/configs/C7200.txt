@@ -1,6 +1,6 @@
 !
 !
-int g1/0
+int f0/0
 no shut
 ip address dhcp
 !
@@ -14,3 +14,7 @@ transport input all
 login local
 !
 crypto key generate rsa
+1024
+
+
+
