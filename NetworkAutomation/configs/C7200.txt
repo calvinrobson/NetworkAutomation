@@ -17,4 +17,4 @@ crypto key generate rsa
 1024
 
 
-
+ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -c 3des-cbc calvin@192.168.122.35
