@@ -1,0 +1,14 @@
+R1:
+  hostname: 192.168.122.35
+  groups:
+    - Guildford
+  data:
+    tags:
+      - 3725
+R2:
+  hostname: 192.168.122.167
+  groups:
+    - Guildford
+  data:
+    tags:
+      - 3725
