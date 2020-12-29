@@ -1,0 +1,76 @@
+2020-12-29 17:14:46,497 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show cdp neighbors'} on 2 hosts
+2020-12-29 17:14:46,500 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/dist-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/usr/local/lib/python3.8/dist-packages/nornir/core/inventory.py", line 439, in get_connection
+    conn = self.get_connection_parameters(connection)
+  File "/usr/local/lib/python3.8/dist-packages/nornir/core/inventory.py", line 373, in get_connection_parameters
+    r = self._get_connection_options_recursively(connection)
+  File "/usr/local/lib/python3.8/dist-packages/nornir/core/inventory.py", line 402, in _get_connection_options_recursively
+    sp = g._get_connection_options_recursively(connection)
+AttributeError: 'str' object has no attribute '_get_connection_options_recursively'
+
+2020-12-29 17:14:46,501 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/dist-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/usr/local/lib/python3.8/dist-packages/nornir/core/inventory.py", line 439, in get_connection
+    conn = self.get_connection_parameters(connection)
+  File "/usr/local/lib/python3.8/dist-packages/nornir/core/inventory.py", line 373, in get_connection_parameters
+    r = self._get_connection_options_recursively(connection)
+  File "/usr/local/lib/python3.8/dist-packages/nornir/core/inventory.py", line 402, in _get_connection_options_recursively
+    sp = g._get_connection_options_recursively(connection)
+AttributeError: 'str' object has no attribute '_get_connection_options_recursively'
+
+2020-12-29 17:14:46,502 -  nornir.core -     INFO -        run() - Running task 'close_connections_task' with args {} on 2 hosts
+2020-12-29 17:29:24,490 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show cdp neighbors'} on 2 hosts
+2020-12-29 17:29:27,553 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/netmiko/base_connection.py", line 920, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/usr/local/lib/python3.8/dist-packages/paramiko/client.py", line 368, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.122.167
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/dist-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/usr/local/lib/python3.8/dist-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/usr/local/lib/python3.8/dist-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/usr/local/lib/python3.8/dist-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/usr/local/lib/python3.8/dist-packages/netmiko/ssh_dispatcher.py", line 312, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/netmiko/base_connection.py", line 346, in __init__
+    self._open()
+  File "/usr/local/lib/python3.8/dist-packages/netmiko/base_connection.py", line 351, in _open
+    self.establish_connection()
+  File "/usr/local/lib/python3.8/dist-packages/netmiko/base_connection.py", line 942, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 192.168.122.167:22
+
+
+
+2020-12-29 17:29:27,555 -  nornir.core -     INFO -        run() - Running task 'close_connections_task' with args {} on 2 hosts
+2020-12-29 17:30:34,855 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show cdp neighbors'} on 2 hosts
+2020-12-29 17:30:38,391 -  nornir.core -     INFO -        run() - Running task 'close_connections_task' with args {} on 2 hosts
