@@ -1,6 +1,6 @@
 !
 !
-int f0/0
+int f0
 no shut
 ip address dhcp
 !
