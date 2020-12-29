@@ -88,3 +88,5 @@ Device settings: cisco_ios 192.168.122.167:22
 2020-12-29 20:35:57,986 -  nornir.core -     INFO -        run() - Running task 'close_connections_task' with args {} on 2 hosts
 2020-12-29 20:38:48,684 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show cdp neighbors', 'use_textfsm': True} on 2 hosts
 2020-12-29 20:38:50,401 -  nornir.core -     INFO -        run() - Running task 'close_connections_task' with args {} on 2 hosts
+2020-12-29 20:54:50,527 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show cdp neighbor', 'use_textfsm': True} on 2 hosts
+2020-12-29 20:54:52,177 -  nornir.core -     INFO -        run() - Running task 'close_connections_task' with args {} on 2 hosts
