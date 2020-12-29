@@ -74,3 +74,17 @@ Device settings: cisco_ios 192.168.122.167:22
 2020-12-29 17:29:27,555 -  nornir.core -     INFO -        run() - Running task 'close_connections_task' with args {} on 2 hosts
 2020-12-29 17:30:34,855 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show cdp neighbors'} on 2 hosts
 2020-12-29 17:30:38,391 -  nornir.core -     INFO -        run() - Running task 'close_connections_task' with args {} on 2 hosts
+2020-12-29 17:37:51,585 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show cdp neighbors'} on 2 hosts
+2020-12-29 17:37:53,026 -  nornir.core -     INFO -        run() - Running task 'close_connections_task' with args {} on 2 hosts
+2020-12-29 20:25:43,174 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show cdp neighbors'} on 2 hosts
+2020-12-29 20:25:44,789 -  nornir.core -     INFO -        run() - Running task 'close_connections_task' with args {} on 2 hosts
+2020-12-29 20:26:47,349 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show cdp neighbors'} on 2 hosts
+2020-12-29 20:26:48,920 -  nornir.core -     INFO -        run() - Running task 'close_connections_task' with args {} on 2 hosts
+2020-12-29 20:28:01,231 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show version'} on 2 hosts
+2020-12-29 20:28:02,739 -  nornir.core -     INFO -        run() - Running task 'close_connections_task' with args {} on 2 hosts
+2020-12-29 20:34:41,988 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show version'} on 2 hosts
+2020-12-29 20:34:43,470 -  nornir.core -     INFO -        run() - Running task 'close_connections_task' with args {} on 2 hosts
+2020-12-29 20:35:56,410 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show version', 'use_textfsm': True} on 2 hosts
+2020-12-29 20:35:57,986 -  nornir.core -     INFO -        run() - Running task 'close_connections_task' with args {} on 2 hosts
+2020-12-29 20:38:48,684 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show cdp neighbors', 'use_textfsm': True} on 2 hosts
+2020-12-29 20:38:50,401 -  nornir.core -     INFO -        run() - Running task 'close_connections_task' with args {} on 2 hosts
