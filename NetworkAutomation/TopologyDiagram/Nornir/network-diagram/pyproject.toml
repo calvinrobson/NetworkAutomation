@@ -6,8 +6,10 @@ authors = ["Calvin Robson"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+nornir =  = { git = "https://github.com/nornir-automation/netmiko", branch = "develop" }
 
 [tool.poetry.dev-dependencies]
+ipython = "^7.19"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
