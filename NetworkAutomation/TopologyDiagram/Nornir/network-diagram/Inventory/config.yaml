@@ -1,9 +1,11 @@
 ---
-core:
-    num_workers: 2
-inventory: 
-    plugin: nornir.plugins.inventory.simple.SimpleInventory
-options:
-    host_file: "inventory/RouterIntel/hosts.yaml"
-    group_file: "inventory/RouterIntel/groups.yaml"
-    defaults_file: "inventory/RouterIntel/defaults.yaml"
+inventory:
+  plugin: SimpleInventory
+  options:
+    host_file: 'RouterIntel/hosts.yaml'
+    group_file: 'RouterIntel/groups.yaml'
+    defaults_file: 'RouterIntel/defaults.yaml'
+runner:
+   plugin: threaded
+   options:
+     num_workers: 100
