@@ -1,7 +1,9 @@
-===
-num_workers: 2
-inventory: nornir.plugins.inventory.simple.SimpleInventory
-SimpleInventory:
+---
+core:
+    num_workers: 2
+inventory: 
+    plugin: nornir.plugins.inventory.simple.SimpleInventory
+options:
     host_file: "inventory/RouterIntel/hosts.yaml"
     group_file: "inventory/RouterIntel/groups.yaml"
     defaults_file: "inventory/RouterIntel/defaults.yaml"
