@@ -1,16 +1,5 @@
 ---
 inventory:
-<<<<<<< HEAD
-     plugin: SimpleInventory
-     options:
-        host_file: "Inventory/RouterIntel/hosts.yaml"
-        group_file: "Inventory/RouterIntel/groups.yaml"
-        defaults_file: "Inventory/RouterIntel/defaults.yaml"
- runner:
-     plugin: threaded
-     options:
-         num_workers: 2
-=======
   plugin: SimpleInventory
   options:
     host_file: 'RouterIntel/hosts.yaml'
@@ -20,4 +9,3 @@ runner:
    plugin: threaded
    options:
      num_workers: 100
->>>>>>> 93d75b214c15589f756b41c6a740a35442a8bebb
