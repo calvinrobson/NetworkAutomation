@@ -6,8 +6,12 @@ authors = ["Calvin Robson"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+nornir = "^3.0.0"
 
 [tool.poetry.dev-dependencies]
+ipython = "^7.19.0"
+mypy = "^0.790"
+nornir = "^3.0.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
