@@ -1,12 +1,12 @@
 R1:
-  hostname: 192.168.122.35
+  hostname: 192.168.122.158
   groups:
   data:
     site: Guildford
     tags:
       - 3725
 R2:
-  hostname: 192.168.122.167
+  hostname: 192.168.122.25
   groups:
   data:
     tags:
