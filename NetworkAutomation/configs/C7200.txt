@@ -5,6 +5,8 @@ no shut
 ip address dhcp
 !
 !
+enable secret password
+!
 username calvin password password
 !
 ip domain-name cisco
