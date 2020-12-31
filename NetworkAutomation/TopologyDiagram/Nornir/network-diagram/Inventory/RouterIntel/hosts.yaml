@@ -11,3 +11,9 @@ R2:
   data:
     tags:
       - 3725
+R3:
+  hostname: 192.168.122.125
+  groups:
+  data:
+    tags:
+      - 3725
