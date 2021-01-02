@@ -6,7 +6,7 @@ from nornir_netmiko import netmiko_send_command
 
 def get_interfaces(task):
     r = task.run(netmiko_send_command, command_string="show cdp neighbor", use_textfsm=True)
-    task.host["int"] = r.result
+    task.host["information"] = r.result
     return r.result
 
 def main():

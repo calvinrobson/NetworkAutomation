@@ -13,3 +13,9 @@ class Link:
         )
     def __hash__(self) -> int
         return hash(tuple(self.interfaces))
+    
+    def __str__(self) -> str:
+        return "<->".join(
+            str(interface)
+            for interface in self.interfaces
+        )
