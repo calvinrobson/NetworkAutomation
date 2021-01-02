@@ -16,10 +16,11 @@ class Interface:
     def __str__(self) -> str:
         return f"{self.device_name} {self.name}"
     
-    def __lt__(self) -> bool:
+    def __lt__(self, other) -> bool:
         return (self.device_name, self.name) < (other.device_name, other.name)
-
-
-
-Link(Interface('gig1', 'R1'), Interface('gig1', 'R2'))
-Link(Interface('gig1', 'R2'), Interface('gig1', 'R1'))
+    
+    def __eq__(self, other) -> bool:
+        return (self.name, self.device_name) == (other.device_name)
+    
+    def __hash__(self) -> int:
+        return hash(self.name, self.device_name)
