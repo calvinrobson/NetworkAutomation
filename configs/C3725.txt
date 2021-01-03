@@ -1,0 +1,18 @@
+!
+!
+!
+enable secret password
+!
+username calvin password password
+!
+ip domain-name cisco
+!
+line vty 0 4 
+transport input all
+login local
+!
+crypto key generate rsa
+1024
+
+
+ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -c 3des-cbc calvin@192.168.122.35

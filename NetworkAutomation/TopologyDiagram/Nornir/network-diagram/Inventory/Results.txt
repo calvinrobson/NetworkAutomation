@@ -1,0 +1,42 @@
+* R1 ** changed : False ********************************************************
+vvvv get_interfaces ** changed : False vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv INFO
+---- netmiko_send_command ** changed : False ----------------------------------- INFO
+[ { 'capability': 'R S I',
+    'local_interface': 'Fas 0/0',
+    'neighbor': 'R3.cisco',
+    'neighbor_interface': 'Fas 0/0',
+    'platform': '3725'},
+  { 'capability': 'R S I',
+    'local_interface': 'Fas 0/0',
+    'neighbor': 'R2.cisco',
+    'neighbor_interface': 'Fas 0/0',
+    'platform': '3725'}]
+^^^^ END get_interfaces ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+* R2 ** changed : False ********************************************************
+vvvv get_interfaces ** changed : False vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv INFO
+---- netmiko_send_command ** changed : False ----------------------------------- INFO
+[ { 'capability': 'R S I',
+    'local_interface': 'Fas 0/0',
+    'neighbor': 'R1.cisco',
+    'neighbor_interface': 'Fas 0/0',
+    'platform': '3725'},
+  { 'capability': 'R S I',
+    'local_interface': 'Fas 0/0',
+    'neighbor': 'R3.cisco',
+    'neighbor_interface': 'Fas 0/0',
+    'platform': '3725'}]
+^^^^ END get_interfaces ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+* R3 ** changed : False ********************************************************
+vvvv get_interfaces ** changed : False vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv INFO
+---- netmiko_send_command ** changed : False ----------------------------------- INFO
+[ { 'capability': 'R S I',
+    'local_interface': 'Fas 0/0',
+    'neighbor': 'R1.cisco',
+    'neighbor_interface': 'Fas 0/0',
+    'platform': '3725'},
+  { 'capability': 'R S I',
+    'local_interface': 'Fas 0/0',
+    'neighbor': 'R2.cisco',
+    'neighbor_interface': 'Fas 0/0',
+    'platform': '3725'}]
+^^^^ END get_interfaces ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
