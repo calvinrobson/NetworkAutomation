@@ -1,0 +1,6 @@
+http://192.168.1.226:8000/api/dcim/devices/
+
+
+curl -H "Authorization: Token 49476caca9def74d8526d2ea6d6cb07b35db6edf" \-H "Accept: application/json; indent=4" \http://192.168.1.226/api/dcim/sites/
+
+curl -H "Authorization: Token 49476caca9def74d8526d2ea6d6cb07b35db6edf" http://192.168.1.226:8000/api/dcim/sites/
