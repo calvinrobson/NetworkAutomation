@@ -1,5 +1,6 @@
 import yaml
-import deepcopy
+
+from copy import deepcopy
 
 
 def read_yaml(path='inventory.yml'):

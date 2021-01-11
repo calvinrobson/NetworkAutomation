@@ -6,13 +6,5 @@ all:
     Home:
      hosts:
       - hostname: R1
-        host: 192.168.122.157
+        host: 192.168.1.228
         device_type: cisco_ios       
-      - hostname: R2
-        host: 192.168.129.131
-        device_type: cisco_ios
-  BRU:
-   Outside:
-     hosts:
-      - hostname: R3
-        host: 192.168.129.130 
