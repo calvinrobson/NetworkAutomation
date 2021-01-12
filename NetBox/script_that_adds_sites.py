@@ -11,8 +11,8 @@ api_token = "49476caca9def74d8526d2ea6d6cb07b35db6edf"
 
 SITES = [
     {
-        'name': 'Summertown',
-        'slug': 'smt'
+        'name': 'Cape Town',
+        'slug': 'cape-town'
     }
     
 ]
