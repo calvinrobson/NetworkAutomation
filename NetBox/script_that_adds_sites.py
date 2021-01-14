@@ -11,8 +11,8 @@ api_token = "49476caca9def74d8526d2ea6d6cb07b35db6edf"
 
 SITES = [
     {
-        'name': 'Cape Town',
-        'slug': 'cape-town'
+        'name': 'Detroit',
+        'slug': 'dt'
     }
     
 ]
@@ -37,7 +37,7 @@ def add_site(name, slug):
     r = requests.post(NETBOX_URL + FOR_SITES, headers=headers, json=data)
 
     if r.status_code == 201:
-        print(f"Site {} was a success".format(name))
+        print('Site {} was a success'.format(name))
     else:
         r.raise_for_status()
     
