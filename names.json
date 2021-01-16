@@ -1,0 +1,247 @@
+[
+    {
+        "name": "Site 94 Earlham Grove",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.94"
+    },
+    {
+        "name": "Site 19 Osborne House",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.19"
+    },
+    {
+        "name": "Site 55 Worting Road",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.55"
+    },
+    {
+        "name": "Site 9 Heyworth RD",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.9"
+    },
+    {
+        "name": "Site 33 Hampton Mews",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.34"
+    },
+    {
+        "name": "Site 58 Beaufort Road",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.58"
+    },
+    {
+        "name": "Site 30 Heath Farm Way",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.30"
+    },
+    {
+        "name": "Site 113",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.113"
+    },
+    {
+        "name": "Site 115",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.115"
+    },
+    {
+        "name": "Site 23",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.23"
+    },
+    {
+        "name": "Site 72 Glenfiend Road",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.72"
+    },
+    {
+        "name": "Site 38 Prunus Drive",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.38"
+    },
+    {
+        "name": "Site 70 Monks Road",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.70"
+    },
+    {
+        "name": "Site 107 Carlton Road",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.107"
+    },
+    {
+        "name": "Site 11 Joy Paine",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.11"
+    },
+    {
+        "name": "Site 112 Woodlark House",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.112"
+    },
+    {
+        "name": "Site 20 Kings Road",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.20"
+    },
+    {
+        "name": "Site 28 Jubilee House",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.28"
+    },
+    {
+        "name": "Site 34 Elmer House",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.34"
+    },
+    {
+        "name": "Site 81 Muston Road",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.81"
+    },
+    {
+        "name": "Site 8 Wrens Park",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.8"
+    },
+    {
+        "name": "Site 71 Dennis House",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.71"
+    },
+    {
+        "name": "Site 64 Langabeer Court",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.64"
+    },
+    {
+        "name": "Site 42 Howard Court",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.42"
+    },
+    {
+        "name": "Site 37 Goddard Court",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.37"
+    },
+    {
+        "name": "Site 95 Nicholas Court",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.95"
+    },
+    {
+        "name": "Site 68 Ribble Close",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.68"
+    },
+    {
+        "name": "Site 51 Wollaton Road",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.51"
+    },
+    {
+        "name": "Site 5 Sycamore Road",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.5"
+    },
+    {
+        "name": "Site 110 Mount Pleasent",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.110"
+    },
+    {
+        "name": "Site 26",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.26"
+    },
+    {
+        "name": "Site 21",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.21"
+    },
+    {
+        "name": "Site 27",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.27"
+    },
+    {
+        "name": "Site 12 Albi Court",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.12"
+    },
+    {
+        "name": "Site 31 Kings Court",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.31"
+    },
+    {
+        "name": "Site 33",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.33"
+    },
+    {
+        "name": "Site 45 Tennyson Road",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.45"
+    },
+    {
+        "name": "Site 75",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.75"
+    },
+    {
+        "name": "Site 84",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.84"
+    },
+    {
+        "name": "Site 66",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.66"
+    },
+    {
+        "name": "Site 89",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.89"
+    },
+    {
+        "name": "Site 83",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.83"
+    },
+    {
+        "name": "Site 22",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.22"
+    },
+    {
+        "name": "Site 67",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.67"
+    },
+    {
+        "name": "Site 42",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.42"
+    },
+    {
+        "name": "Site 24",
+        "sites": "Advanced Housing",
+        "host-address": "172.31.176.24"
+    },
+    {
+        "name": "BNP_Basildon_R01",
+        "sites": "BNP",
+        "host-address": "172.29.10.18"
+    },
+    {
+        "name": "BNP_Basignstoke_R01",
+        "sites": "BNP",
+        "host-address": "172.29.10.19"
+    },
+    {
+        "name": "Bristows_R01",
+        "sites": "Bristows",
+        "host-address": "89.150.26.33"
+    }
+]

@@ -7,12 +7,13 @@ import decouple
 NETBOX_URL = 'http://192.168.1.226:8000/api'
 FOR_DEVICES = '/dcim/devices/'
 FOR_SITES = '/dcim/sites/'
+TENANCY_GROUP = '/tenancy/tenant-groups/'
 api_token = "49476caca9def74d8526d2ea6d6cb07b35db6edf"
 
 SITES = [
     {
-        'name': 'Detroit',
-        'slug': 'dt'
+        'name': 'Advance Housing',
+        'slug': 'advance-housing'
     }
     
 ]
@@ -34,7 +35,7 @@ def add_site(name, slug):
         'name': name,
         'slug': slug
     }
-    r = requests.post(NETBOX_URL + FOR_SITES, headers=headers, json=data)
+    r = requests.post(NETBOX_URL + TENANCY_GROUP, headers=headers, json=data)
 
     if r.status_code == 201:
         print('Site {} was a success'.format(name))

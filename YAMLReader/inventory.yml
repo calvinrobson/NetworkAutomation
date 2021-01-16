@@ -1,0 +1,20 @@
+all:
+  vars:
+    username: calvin
+    password: password
+  groups:
+    Home:
+     hosts: 
+        hostname: R1
+        host: 192.168.122.157
+        username: user
+        password: password      
+     advance:
+        hostname: R2
+        host: 192.168.129.131
+        device_type: cisco_ios
+  BRU:
+   Outside:
+     hosts:
+      - hostname: R3
+        host: 192.168.129.130 
